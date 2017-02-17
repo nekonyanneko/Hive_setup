@@ -1,0 +1,10 @@
+Hadoop_setup‚Ì—¬‚ê
+
+$ sudo yum -y install hive
+$ yum list installed | grep hive
+$ sudo -u hive hive¨Permission Denied
+$ ls -altd /var/lib/hive
+$ sudo chown -R hive:hive /var/lib/hive
+$ ls -altd /var/lib/hive
+$ sudo -u hive hive
+hive>show databases;
